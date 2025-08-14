@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Expression Detector (Vanilla)</title>
+  <meta name="description"
+    content="Capture a photo and analyze facial expressions with an on-device AI model. No overlays, simple HTML/CSS/JS." />
+  <link rel="canonical" href="/vanilla/index.html" />
+  <link rel="stylesheet" href="./style1.css" />
+  <meta property="og:title" content="AI Expression Detector (Vanilla)" />
+  <meta property="og:description" content="Analyze facial expressions using a lightweight on-device AI model." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Expression Detector</h1>
+      <p>Simple, fast emotion detection — no overlays</p>
+    </header>
+
+    <div id="controls" class="controls">
+      <button id="start-btn" class="button">Start Camera</button>
+      <button id="capture-btn" class="button" disabled>Capture & Analyze</button>
+      <button id="reset-btn" class="button button-ghost" disabled>Reset</button>
+    </div>
+
+    <div class="stage">
+      <video id="video" autoplay playsinline muted></video>
+    </div>
+
+    <section id="output-section" aria-live="polite" aria-busy="false"></section>
+  </div>
+  <footer>
+    <p>© 2025 Developed by Sindhu</p>
+  </footer>
+</body>
+
+
+</html>
